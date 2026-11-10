@@ -1,0 +1,526 @@
+
+/* =================================
+   LAKSHITH ANAND — PORTFOLIO
+   MIDNIGHT SILVER DESIGN
+================================= */
+
+:root {
+    --background: #080D18;
+    --surface: #202B40;
+    --text: #F2F4F8;
+    --muted: #A8B3C5;
+    --accent: #A8B3C5;
+    --border: rgba(168, 179, 197, 0.16);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+    background: var(--accent);
+    color: #080D18;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    width: 100%;
+    min-height: 85px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: var(--accent);
+}
+
+.navbar nav {
+    display: flex;
+    gap: 38px;
+}
+
+.navbar nav a {
+    color: var(--muted);
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: var(--text);
+}
+
+.nav-button {
+    border: 1px solid var(--accent);
+    padding: 11px 22px;
+    color: var(--accent);
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: var(--accent);
+    color: #080D18;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 85vh;
+    padding: 120px 12% 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(55px, 8vw, 105px);
+    line-height: 1.08;
+    letter-spacing: -6px;
+    font-weight: 700;
+}
+
+.hero h1 span,
+.about h2 span,
+.contact h2 span {
+    color: var(--accent);
+}
+
+.hero-description {
+    max-width: 480px;
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 38px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.primary-button {
+    background: var(--accent);
+    color: #080D18;
+    font-weight: 700;
+}
+
+.primary-button:hover {
+    background: #D5DDE9;
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.secondary-button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+/* COMMON SECTIONS */
+
+.section-padding {
+    padding: 120px 12%;
+    border-top: 1px solid var(--border);
+}
+
+.about h2,
+.contact h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.2;
+    letter-spacing: -3px;
+}
+
+.about > p:last-child {
+    color: var(--muted);
+    max-width: 600px;
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* PROJECTS */
+
+.work h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(35px, 5vw, 55px);
+    letter-spacing: -2px;
+    margin-bottom: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 35px 25px;
+    min-height: 220px;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--accent);
+}
+
+.project-card span {
+    color: var(--accent);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.project-card h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    margin-top: 45px;
+}
+
+.project-card p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: #0D1422;
+}
+
+.contact h2 {
+    margin-bottom: 35px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* ANIMATIONS */
+
+.hero > * {
+    animation: fadeUp 0.8s ease both;
+}
+
+.hero > *:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.hero > *:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.hero > *:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px 6%;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .navbar nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        padding: 9px 14px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 90px 7% 30px;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .hero-bottom {
+        margin-top: 75px;
+        font-size: 8px;
+    }
+
+    .section-padding {
+        padding: 85px 7%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2,
+    .contact h2 {
+        letter-spacing: -2px;
+    }
+
+    footer {
+        padding: 25px 7%;
+        flex-direction: column;
+    }
+}
+
+/* SMALL MOBILE SCREENS */
+
+@media (max-width: 380px) {
+    .navbar nav a {
+        font-size: 10px;
+    }
+
+    .hero h1 {
+        font-size: 49px;
+    }
+}
+
+/* SCROLL REVEAL */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* NAVBAR SCROLL EFFECT */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(8, 13, 24, 0.92);
+    backdrop-filter: blur(15px);
+    transition: border-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    border-bottom-color: rgba(168, 179, 197, 0.35);
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* =================================
+   PERSONAL BRAND DESIGN
+================================= */
+
+/* HERO LAYOUT */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 30px;
+    padding: 90px 8% 30px;
+    min-height: 85vh;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.hero-visual img {
+    width: 100%;
+    max-width: 480px;
+    height: 540px;
+    object-fit: contain;
+    object-position: center bottom;
+    filter: drop-shadow(0 15px 50px rgba(168, 179, 197, 0.12));
+}
+
+.portrait-label {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: rgba(18, 27, 43, 0.88);
+    border-left: 2px solid var(--accent);
+    padding: 12px 18px;
+}
+
+.portrait-label span {
+    color: var(--text);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.portrait-label small {
+    color: var(--accent);
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* LEADERSHIP CARD */
+
+.leadership-card {
+    margin-top: 35px;
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+}
+
+.leadership-card span {
+    color: var(--accent);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.leadership-card h3 {
+    margin-top: 12px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 21px;
+}
+
+.leadership-card p {
+    color: var(--muted);
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE HERO */
+
+@media (max-width: 768px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 75px 7% 25px;
+        gap: 20px;
+    }
+
+    .hero-visual img {
+        height: 400px;
+    }
+
+    .hero-bottom {
+        grid-column: 1;
+        margin-top: 25px;
+    }
+
+    .portrait-label {
+        right: 5px;
+        bottom: 15px;
+    }
+}
