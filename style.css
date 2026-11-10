@@ -524,3 +524,104 @@ footer {
         bottom: 15px;
     }
 }
+
+/* =================================
+   CONTACT — MIDNIGHT SILVER
+================================= */
+
+.contact {
+    background: #0D1422;
+}
+
+.contact h2 {
+    margin-bottom: 25px;
+}
+
+.contact-description {
+    color: var(--muted);
+    max-width: 550px;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 45px;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    gap: 15px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    transition: 0.3s ease;
+}
+
+.contact-link:hover {
+    transform: translateX(6px);
+    border-color: var(--accent);
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #080D18;
+    color: var(--accent);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.contact-link div {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-link small {
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.contact-link h3 {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    overflow-wrap: anywhere;
+}
+
+.contact-arrow {
+    color: var(--accent);
+    font-size: 22px;
+    transition: 0.3s ease;
+}
+
+.contact-link:hover .contact-arrow {
+    transform: translate(3px, -3px);
+}
+
+@media (max-width: 480px) {
+    .contact-link {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .contact-link h3 {
+        font-size: 12px;
+    }
+
+    .contact-icon {
+        width: 38px;
+        height: 38px;
+    }
+}
